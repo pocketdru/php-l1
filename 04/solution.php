@@ -12,6 +12,6 @@ foreach ($name_and_age as $person => $data) {
     print_full_name($data[0], $person);
     test_name($person, $data[0]);
 
-    test_sake($data[1]);
+    drinks_sake($data[1]);
     separate();
 }
