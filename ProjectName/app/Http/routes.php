@@ -13,11 +13,4 @@
 
 Route::get('', "HomeController@index");
 
-Route::get('/about', function () {
-
-    $first_name = "Mari";
-    $last_name = "Al Ali";
-    $email = "mary@gmail.com";
-
-    return view('about', compact("first_name", "last_name", "email"));
-});
+Route::get('/about', "AboutController@index");
