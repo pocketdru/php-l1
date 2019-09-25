@@ -1,5 +1,5 @@
 @extends("layout")
-@extends("about")
+
 
 @section("title")
 Laravel
@@ -7,6 +7,6 @@ Laravel
 
 @section("content")
 <div class="title">
-    <h1 class="title">Laravel 5.2<h1>
+    <h1 class="title">{{ $site_title }}<h1>
 </div>
 @stop

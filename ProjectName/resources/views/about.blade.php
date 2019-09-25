@@ -11,4 +11,4 @@
     My name is {{ $first_name }} {{ $last_name }}
     <a href="mailto: {{ $email }}">{{ $email }}</a>
   </p>
-@stop
+@stop 
