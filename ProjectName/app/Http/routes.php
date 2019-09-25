@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/about', function () {
+
+    $first_name = "Mari";
+    $last_name = "Al Ali";
+    $email = "mary@gmail.com";
+
+    return view('about', compact("first_name", "last_name", "email"));
+});
