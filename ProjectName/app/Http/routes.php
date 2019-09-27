@@ -15,4 +15,4 @@ Route::get('', "HomeController@index");
 
 Route::get('/about', "AboutController@index");
 
-Route::resource("user", "UsersController");
+Route::resource("users", "UsersController");
