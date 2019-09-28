@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 use App\User;
 
-class UsersController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+        return view("users/index");
     }
 
     /**
@@ -27,6 +27,7 @@ class UsersController extends Controller
      */
     public function create()
     {
+        // $users = User::all();
         return view("users.create");
     }
 

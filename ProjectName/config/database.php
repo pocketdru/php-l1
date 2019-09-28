@@ -21,7 +21,7 @@ return [
     | you may use many connections at once using the Database library.
     |
     */
-    'default' => env('DB_CONNECTION = sqlite', 'sqlite'),
+    'default' => env('DB_CONNECTION', 'sqlite'),
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -40,7 +40,7 @@ return [
     'connections' => [
         'sqlite' => [
             'driver' => 'sqlite',
-            'database' => env('DB_DATABASE = database', database_path('database.sqlite')),
+            'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
         ],
         'mysql' => [
